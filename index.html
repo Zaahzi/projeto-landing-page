@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escola DNC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- MENU SUPERIOR -->
+    <div id="menusuperior">
+      <a href="https://ed.escoladnc.com.br ">
+        <img id="logodnc" src="imagens/logo.svg" alt="error"
+      /></a>
+      <h1 id="titulomenusuperior">
+        Dê os primeiros passos da <br />
+        sua carreira em Tecnologia
+      </h1>
+      <p id="textomenusuperior">
+        Inscreva-se no curso gratuito de Introdução à <br />
+        Tecnologia da DNC School e aprenda os principais <br />
+        fundamentos para construir experiências efetivas.
+      </p>
+    </div>
+
+    <!-- MENU INFORMACIONAL -->
+    <div id="menuinformacional">
+      <p class="textoinformativo">
+        <img
+          id="certificado"
+          src="imagens/icones/certificado.svg"
+          class="icone"
+          alt="error"
+        />Certificado de conclusão
+      </p>
+
+      <p class="textoinformativo">
+        <img
+          id="relogio"
+          src="imagens/icones/relogio.svg"
+          class="icone"
+          alt="error"
+        />4 horas de conteudo
+      </p>
+
+      <p class="textoinformativo">
+        <img
+          id="camera"
+          src="imagens/icones/camera.svg"
+          class="icone"
+          alt="error"
+        />Aulas online gravadas
+      </p>
+    </div>
+
+    <!-- SEÇÃO VIDEO -->
+    <div id="secaovideo">
+      <iframe
+        id="videoaka"
+        width="500"
+        height="280"
+        src="https://www.youtube.com/embed/wjxQ2uDIvac"
+        title="Aka Rasta - FREESTYLE 2023 (Clipe Oficial)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <div>
+        <h1 id="titulovideo">
+          Aprenda com especialistas e <br />
+          seu primeiro projeto
+        </h1>
+        <p id="textovideo">
+          Conheça o processo de desenvolvimento e entenda como utilizar <br />
+          os principais métodos e ferramentas da área para resolver <br />
+          problemas complexos. <br /><br />
+          Conquiste seu certificado e desenvolva um projeto prático para aplicar
+          seus conhecimentos.
+        </p>
+      </div>
+    </div>
+
+    <!-- CARROSSEL -->
+    <div id="carrossel">
+      <h1 id="titulo-carrossel">
+        Mais de 500 alunos já iniciaram seus estudos
+      </h1>
+      <!--  -->
+      <div id="div-cards">
+        <img
+          class="seta"
+          id="seta-esquerda"
+          onclick="RolarParaEsquerda()"
+          src="imagens/icones/setaesquerda.svg"
+          alt=""
+        />
+        <img
+          id="Leonardo"
+          class="card"
+          src="imagens/cards/Leonardo.svg"
+          alt=""
+        />
+        <img
+          id="Samantha"
+          class="card"
+          src="imagens/cards/Samantha.svg"
+          alt=""
+        />
+        <img id="Bruna" class="card" src="imagens/cards/Bruna.svg" alt="" />
+        <img
+          class="seta"
+          id="seta-direita"
+          src="imagens/icones/setadireita.svg"
+          onclick="RolarParaDireita()"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div id="formulario">
+      <h1 id="titulo-formulario">
+        Comece agora mesmo e dê o próximo passo da sua carreira
+      </h1>
+      <form
+        action="https://api.sheetmonkey.io/form/jGP5w5GnavzwZhpXRPccsz"
+        method="post"
+      >
+        <input type="text" placeholder="Nome" name="Name" required /><br />
+        <input type="email" placeholder="E-mail" name="Email" required /><br />
+        <input
+          type="number"
+          placeholder="Telefone"
+          name="Phone"
+          required
+        /><br />
+        <input
+          type="hidden"
+          name="Created"
+          value="x-sheetmonkey-current-date-time"
+        />
+        <button type="submit">Acesse a emenda grátis</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
